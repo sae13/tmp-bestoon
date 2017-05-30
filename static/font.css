@@ -1,0 +1,64 @@
+      @font-face {
+        font-family: Parastoo;
+        src: url('https://cdn.rawgit.com/rastikerdar/parastoo-font/v1.0.0-alpha3/dist/Parastoo.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Vazir;
+        src: url('https://cdn.rawgit.com/rastikerdar/vazir-font/v8.2.1/dist/Vazir.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Samim;
+        src: url('https://cdn.rawgit.com/rastikerdar/samim-font/v1.0.2/dist/Samim.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Shabnam;
+        src: url('https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.0.2/dist/Shabnam.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Tanha;
+        src: url('https://cdn.rawgit.com/rastikerdar/tanha-font/v0.4.1/dist/Tanha.woff') format('woff');
+      }    
+      
+      @font-face {
+        font-family: Gandom;
+        src: url('https://cdn.rawgit.com/rastikerdar/gandom-font/v0.5.1/dist/Gandom.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Sahel;
+        src: url('https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha9/dist/Sahel.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Iranian Sans;
+        src: url('IranianSans.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Mitra;
+        src: url('Mitra.woff') format('woff');
+      }    
+                  
+      @font-face {
+        font-family: Droid Naskh;
+        src: url('DroidNaskh.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Roya;
+        src: url('Roya.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Nazanin;
+        src: url('Nazanin.woff') format('woff');
+      }    
+            
+      @font-face {
+        font-family: Yekan;
+        src: url('Yekan.woff') format('woff');
+      } 
