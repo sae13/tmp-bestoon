@@ -1,5 +1,3 @@
-{% load static %}
-@import url('{% static "font.css" %}') ;
 body {
   font-family: Vazir;
 }
