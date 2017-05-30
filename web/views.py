@@ -51,7 +51,7 @@ def submit_income(request):
 def register(request):
     print("hello world!")
 
-def index2(request):
+def index(request):
     return render(request, 'index.html', {
         'foo': 'bar',
     },)
