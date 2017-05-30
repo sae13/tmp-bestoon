@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 from json import JSONEncoder
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from web.models import Expense, Income, Token, User
 from datetime import datetime
+from django.utils.crypto import get_random_string
 # Create your views here.
 @csrf_exempt
 def submit_expense(request):
@@ -13,9 +15,11 @@ def submit_expense(request):
         now = request.POST['date']
     #print (now)
     this_token = request.POST['token']
-    this_user = User.objects.filter(token__token = this_token).get()
+    this_user = User.objects.filter\
+    (token__token = this_token).get()
     #print (this_user)
-    Expense.objects.create(user = this_user, text = request.POST['text'], 
+    Expense.objects.create(user = this_user,
+        text = request.POST['text'],
             amount = request.POST['amount'], date = now)
     print("hello world")
     print(request.POST)
@@ -31,14 +35,18 @@ def submit_income(request):
         now = request.POST['date']
     #print (now)
     this_token = request.POST['token']
-    this_user = User.objects.filter(token__token = this_token).get()
+    this_user = User.objects.filter(token__token \
+     = this_token).get()
     #print (this_user)
-    Income.objects.create(user = this_user, text = request.POST['text'
-        ], 
+    Income.objects.create(user = this_user,\
+     text = request.POST['text'
+        ],
             amount = request.POST['amount'], date = now)
     print("hello world")
     print(request.POST)
     return JsonResponse(
         {
             'status':'ok',
-            }, encoder=JSONEncoder)      
+            }, encoder=JSONEncoder)
+def register(request):
+    print("hello world!")
