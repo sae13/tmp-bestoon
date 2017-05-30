@@ -50,3 +50,8 @@ def submit_income(request):
             }, encoder=JSONEncoder)
 def register(request):
     print("hello world!")
+
+def index2(request):
+    return render(request, 'index.html', {
+        'foo': 'bar',
+    },)

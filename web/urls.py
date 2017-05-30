@@ -7,5 +7,5 @@ urlpatterns = [
     url(r'^submit/income/$', views.submit_income, name='submit_income'
         ),
     url(r'^register/$', views.register, name='register'),
-        
+    url(r'^$', views.index name='index2')
     ]
